@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandlingInputForm", "Hsndli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataDrivenTests", "DataDrivenTests\DataDrivenTests.csproj", "{B5DC3410-CA14-4D89-9D16-8D1C8D67823A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium-Waits", "Selenium-Waits\Selenium-Waits.csproj", "{9CF9D076-5546-4A59-8A5A-199C6A1C4ECD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B5DC3410-CA14-4D89-9D16-8D1C8D67823A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5DC3410-CA14-4D89-9D16-8D1C8D67823A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5DC3410-CA14-4D89-9D16-8D1C8D67823A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF9D076-5546-4A59-8A5A-199C6A1C4ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF9D076-5546-4A59-8A5A-199C6A1C4ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF9D076-5546-4A59-8A5A-199C6A1C4ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF9D076-5546-4A59-8A5A-199C6A1C4ECD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

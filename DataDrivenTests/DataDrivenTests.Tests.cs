@@ -3,10 +3,9 @@ using OpenQA.Selenium.Chrome;
 
 namespace DataDrivenTests
 {
-	public class Tests
+	public class DataDrivenTests
 	{
 		WebDriver driver;
-
 		IWebElement textBoxFirstNum;
 		IWebElement dropDownOperation;
 		IWebElement textBoxSecondNum;
