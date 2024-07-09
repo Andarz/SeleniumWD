@@ -5,7 +5,9 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWebTables", "WorkingWebTables\WorkingWebTables.csproj", "{0DF8B3D0-E078-4494-83B1-A1F3519E10FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drop-downPractice", "Drop-downPractice\Drop-downPractice.csproj", "{0F1E3D3E-E472-428F-9A6F-2CDF28648336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drop-downPractice", "Drop-downPractice\Drop-downPractice.csproj", "{0F1E3D3E-E472-428F-9A6F-2CDF28648336}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandlingInputForm", "HsndlingInputForm\HandlingInputForm.csproj", "{81F6FC56-7122-4CE7-8487-13EDC6CB76AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0F1E3D3E-E472-428F-9A6F-2CDF28648336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F1E3D3E-E472-428F-9A6F-2CDF28648336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F1E3D3E-E472-428F-9A6F-2CDF28648336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F6FC56-7122-4CE7-8487-13EDC6CB76AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F6FC56-7122-4CE7-8487-13EDC6CB76AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F6FC56-7122-4CE7-8487-13EDC6CB76AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F6FC56-7122-4CE7-8487-13EDC6CB76AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
