@@ -28,9 +28,10 @@ namespace Selenium_Waits
 		{
 			driver.FindElement(By.Id("adder")).Click();
 
-			var redBox = driver.FindElement(By.Id("box0"));
-
-			Assert.True(redBox.Displayed);
+			Assert.Throws<NoSuchElementException>(() =>
+			{
+				var redBox = driver.FindElement(By.Id("box0"));
+			});
 		}
 
 		[Test, Order(2)]
@@ -38,11 +39,11 @@ namespace Selenium_Waits
 		{
 			driver.FindElement(By.Id("reveal")).Click();
 
-			var inputBox = driver.FindElement(By.Id("revealed"));
-
-			inputBox.SendKeys("Displayed");
-
-			Assert.That(inputBox.GetAttribute("value"), Is.EqualTo("Displayed"));
+			Assert.Throws<ElementNotInteractableException>(() =>
+			{
+				var inputBox = driver.FindElement(By.Id("revealed"));
+				inputBox.SendKeys("Displayed");
+			});
 		}
 
 		// Using Thread.Sleep
