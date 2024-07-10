@@ -3,7 +3,7 @@ using OpenQA.Selenium.Chrome;
 
 namespace WorkingWebTables
 {
-	public class Tests
+	public class WorkingWebTablesTests
 	{
 		private IWebDriver driver;
 
