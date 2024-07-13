@@ -61,7 +61,7 @@ namespace ExplicitWaitExcersise
 
 			try
 			{
-				WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+				WebDriverWait wait = new(driver, TimeSpan.FromSeconds(10));
 
 				var buyNowBtn = wait.Until(e => e.FindElement(By.LinkText("Buy Now")));
 
