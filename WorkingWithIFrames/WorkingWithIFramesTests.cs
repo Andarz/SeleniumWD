@@ -25,7 +25,7 @@ namespace WorkingWithIFrames
 		}
 
 		[Test]
-		public void HandlingiFramesByIndex()
+		public void HandlingFramesByIndex()
 		{
 			WebDriverWait wait = new(driver, TimeSpan.FromSeconds(10));
 
@@ -35,15 +35,15 @@ namespace WorkingWithIFrames
 
 			var links = wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.CssSelector(".dropdown-content a")));
 
-            foreach (var link in links)
-            {
-                Console.WriteLine(link.Text);
+			foreach (var link in links)
+			{
+				Console.WriteLine(link.Text);
 
 				Assert.IsTrue(link.Displayed, "Link is not displayed as expected");
-            }
+			}
 
 			driver.SwitchTo().DefaultContent();
-        }
+		}
 
 		[Test]
 		public void HandlingiFramesById()
