@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenQA.Selenium;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,46 @@ using System.Threading.Tasks;
 
 namespace POMExcersise.Pages
 {
-	internal class InventoryPage
+	public class InventoryPage : BasePage
 	{
+        public InventoryPage(IWebDriver driver) : base(driver)
+        {
+            
+        }
+
+        protected readonly By cartLink = By.XPath(".shopping_cart_link");
+        protected readonly By productsPageTitle = By.ClassName("title");
+        protected readonly By inventoryItems = By.CssSelector(".inventory_item");
+
+        public void AddToCartByIndex(int itemIndex)
+        {
+            var itemAddToCartButton = By.CssSelector($".inventory_item:nth-child({itemIndex + 1}) .btn_inventory");
+            Click(itemAddToCartButton);
+        }
+
+        public void AddToCartByName(string productName)
+        {
+            var itemAddToCartButton = By.XPath($"//div[text()='{productName}']" + 
+                $"/ancestor::div[@class='inventory_item']//button[contains(@class, 'btn_inventory')]");
+            Click(itemAddToCartButton);
+        }
+
+        public void ClickCartLink()
+        {
+            Click(cartLink);
+        }
+
+        public bool IsInventoryDisplayed()
+        {
+            return FindElements(inventoryItems).Any();
+        }
+
+        public bool IsPageLoaded()
+        {
+            return GetText(productsPageTitle) == "Products" && driver.Url.Contains("inventory.html");
+        }
+
+
+
 	}
 }

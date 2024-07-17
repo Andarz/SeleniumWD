@@ -13,19 +13,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataDrivenTests", "DataDriv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selenium-Waits", "Selenium-Waits\Selenium-Waits.csproj", "{9CF9D076-5546-4A59-8A5A-199C6A1C4ECD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitWaitExcersise", "ImplicitWaitExcersise\ImplicitWaitExcersise.csproj", "{98EA6CA0-CE71-4842-AD3D-BC77611BE76B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplicitWaitExcersise", "ImplicitWaitExcersise\ImplicitWaitExcersise.csproj", "{98EA6CA0-CE71-4842-AD3D-BC77611BE76B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplicitWaitExcersise", "ExplicitWaitExcersise\ExplicitWaitExcersise.csproj", "{10D44B74-98BA-4FFA-8CB6-481A79011DFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExplicitWaitExcersise", "ExplicitWaitExcersise\ExplicitWaitExcersise.csproj", "{10D44B74-98BA-4FFA-8CB6-481A79011DFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithBrowserWindows", "WorkingWithBrowserWindows\WorkingWithBrowserWindows.csproj", "{72930CC6-EC13-4BB4-9B48-3BD12C40D543}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithBrowserWindows", "WorkingWithBrowserWindows\WorkingWithBrowserWindows.csproj", "{72930CC6-EC13-4BB4-9B48-3BD12C40D543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithAlerts", "WorkingWithAlerts\WorkingWithAlerts.csproj", "{141CEDB0-E092-4991-B8BF-E2EA7178DE62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithAlerts", "WorkingWithAlerts\WorkingWithAlerts.csproj", "{141CEDB0-E092-4991-B8BF-E2EA7178DE62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithIFrames", "WorkingWithIFrames\WorkingWithIFrames.csproj", "{D3C220C8-0A46-4C3D-BF89-A5B5D3B93585}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithIFrames", "WorkingWithIFrames\WorkingWithIFrames.csproj", "{D3C220C8-0A46-4C3D-BF89-A5B5D3B93585}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POMLab", "POMLab\POMLab.csproj", "{64AEA0F7-5225-4B14-9AC1-8F5FCDA6A375}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POMLab", "POMLab\POMLab.csproj", "{64AEA0F7-5225-4B14-9AC1-8F5FCDA6A375}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsRegistryPOM", "StudentsRegistryPOM\StudentsRegistryPOM.csproj", "{28F5115B-ED1E-4951-A038-AFEC58203BA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsRegistryPOM", "StudentsRegistryPOM\StudentsRegistryPOM.csproj", "{28F5115B-ED1E-4951-A038-AFEC58203BA7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POMExcersise", "POMExcersise\POMExcersise.csproj", "{CAF011BA-87EC-425B-9669-329117A262CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{28F5115B-ED1E-4951-A038-AFEC58203BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28F5115B-ED1E-4951-A038-AFEC58203BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28F5115B-ED1E-4951-A038-AFEC58203BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF011BA-87EC-425B-9669-329117A262CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF011BA-87EC-425B-9669-329117A262CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF011BA-87EC-425B-9669-329117A262CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF011BA-87EC-425B-9669-329117A262CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,12 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OpenQA.Selenium;
 
 namespace POMExcersise.Pages
 {
-	internal class HiddenMenuPage
+	public class HiddenMenuPage : BasePage
 	{
-	}
+        public HiddenMenuPage(IWebDriver driver) : base(driver)
+        {
+            
+        }
+
+        private readonly By menuButton = By.Id("react-burger-menu-btn");
+        private readonly By logoutButton = By.LinkText("Logout");
+
+        public void ClickMenuButton()
+        {
+            Click(menuButton);
+        }
+
+        public void ClickLogoutButton()
+        {
+            Click(logoutButton);
+        }
+
+        public bool IsMenuOpen()
+        {
+            return FindElement(logoutButton).Displayed;
+        }
+    }
 }

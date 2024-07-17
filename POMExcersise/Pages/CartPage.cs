@@ -1,12 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OpenQA.Selenium;
 
 namespace POMExcersise.Pages
 {
-	internal class CartPage
+	public class CartPage : BasePage
 	{
-	}
+        public CartPage(IWebDriver driver) : base(driver)
+        {
+            
+        }
+
+        private readonly By cartItem = By.CssSelector(".cart_item");
+        private readonly By checkoutButton = By.Id("checkout");
+
+        public bool IsCartItemDisplayed()
+        {
+            return FindElement(cartItem).Displayed;
+        }
+
+        public void ClickCheckout()
+        {
+            Click(checkoutButton);
+        }
+    }
 }

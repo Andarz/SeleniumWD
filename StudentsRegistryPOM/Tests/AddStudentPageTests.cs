@@ -56,9 +56,6 @@ namespace StudentsRegistryPOM.Tests
 			var students = viewPage.GetStudentsList();
 
 			Assert.That(students, Does.Contain(newStudent));
-
-
-
 		}
 	}
 }

@@ -18,5 +18,27 @@ namespace POMExcersise.Pages
 		{
 			return wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(by));
 		}
+
+		protected IReadOnlyCollection<IWebElement> FindElements(By by)
+		{
+			return driver.FindElements(by);
+		}
+
+		protected void Click(By by)
+		{
+			FindElement(by).Click();
+		}
+
+		protected void Type(By by, string text)
+		{
+			var element = FindElement(by);
+			element.Clear();
+			element.SendKeys(text);
+		}
+
+		protected string GetText(By by)
+		{
+			return FindElement(by).Text;
+		}
     }
 }
