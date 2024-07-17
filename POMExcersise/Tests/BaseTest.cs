@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using POMExcersise.Pages;
 
 namespace POMExcersise.Tests
 {
@@ -31,7 +32,8 @@ namespace POMExcersise.Tests
 		protected void Login(string username, string password)
 		{
 			driver.Navigate().GoToUrl("https://www.saucedemo.com/");
-			var loginPage = new Lo
+			var loginPage = new LoginPage(driver);
+			loginPage.LoginUser(username, password);
 		}
 	}
 }

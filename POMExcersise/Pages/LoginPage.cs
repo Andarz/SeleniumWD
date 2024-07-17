@@ -33,5 +33,12 @@ namespace POMExcersise.Pages
         {
             return GetText(errorMessage);
         }
+
+        public void LoginUser(string username, string password)
+        {
+            InputUsername(username);
+            InputPassword(password);
+            ClickLoginButton();
+        }
 	}
 }
