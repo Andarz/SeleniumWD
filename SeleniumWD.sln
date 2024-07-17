@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithAlerts", "Workin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithIFrames", "WorkingWithIFrames\WorkingWithIFrames.csproj", "{D3C220C8-0A46-4C3D-BF89-A5B5D3B93585}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POMLab", "POMLab\POMLab.csproj", "{64AEA0F7-5225-4B14-9AC1-8F5FCDA6A375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsRegistryPOM", "StudentsRegistryPOM\StudentsRegistryPOM.csproj", "{28F5115B-ED1E-4951-A038-AFEC58203BA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{D3C220C8-0A46-4C3D-BF89-A5B5D3B93585}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3C220C8-0A46-4C3D-BF89-A5B5D3B93585}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3C220C8-0A46-4C3D-BF89-A5B5D3B93585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64AEA0F7-5225-4B14-9AC1-8F5FCDA6A375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64AEA0F7-5225-4B14-9AC1-8F5FCDA6A375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64AEA0F7-5225-4B14-9AC1-8F5FCDA6A375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64AEA0F7-5225-4B14-9AC1-8F5FCDA6A375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F5115B-ED1E-4951-A038-AFEC58203BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F5115B-ED1E-4951-A038-AFEC58203BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F5115B-ED1E-4951-A038-AFEC58203BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F5115B-ED1E-4951-A038-AFEC58203BA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
