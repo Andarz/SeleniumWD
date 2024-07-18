@@ -9,9 +9,9 @@ namespace POMExcersise.Pages
             
         }
 
-        protected readonly By cartLink = By.XPath(".shopping_cart_link");
+        protected readonly By cartLink = By.XPath("//a[@class='shopping_cart_link']");
         protected readonly By productsPageTitle = By.ClassName("title");
-        protected readonly By inventoryItems = By.CssSelector(".inventory_item");
+        public readonly By inventoryItems = By.CssSelector(".inventory_item");
 
         public void AddToCartByIndex(int itemIndex)
         {

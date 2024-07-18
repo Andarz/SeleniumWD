@@ -9,7 +9,7 @@ namespace POMExcersise.Pages
             
         }
 
-        private readonly By cartItem = By.CssSelector(".cart_item");
+        private readonly By cartItem = By.XPath("//div[@class='cart_item']");
         private readonly By checkoutButton = By.Id("checkout");
 
         public bool IsCartItemDisplayed()

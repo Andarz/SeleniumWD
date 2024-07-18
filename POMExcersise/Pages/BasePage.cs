@@ -19,7 +19,7 @@ namespace POMExcersise.Pages
 			return wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(by));
 		}
 
-		protected IReadOnlyCollection<IWebElement> FindElements(By by)
+		public IReadOnlyCollection<IWebElement> FindElements(By by)
 		{
 			return driver.FindElements(by);
 		}
