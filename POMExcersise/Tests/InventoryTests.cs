@@ -1,15 +1,15 @@
-﻿using POMExcersise.Pages;
-
-namespace POMExcersise.Tests
+﻿namespace POMExcersise.Tests
 {
 	public class InventoryTests : BaseTest
 	{
+		[SetUp]
+		public void SetUp()
+		{
+			Login("standard_user", "secret_sauce");
+		}
 		[Test]
 		public void TestInventoryDisplay()
 		{
-			Login("standard_user", "secret_sauce");
-
-			var inventoryPage = new InventoryPage(driver);
 
 			Assert.That(inventoryPage.IsInventoryDisplayed(), Is.True,
 				"Login failed and inventory page is not loaded");
@@ -18,11 +18,8 @@ namespace POMExcersise.Tests
 		[Test]
 		public void TestAddToCartByIndex()
 		{
-			Login("standard_user", "secret_sauce");
 
-			var inventoryPage = new InventoryPage(driver);
 			inventoryPage.AddToCartByIndex(3);
-			var cartPage = new CartPage(driver);
 			inventoryPage.ClickCartLink();
 
 			Assert.That(cartPage.IsCartItemDisplayed(), Is.True,
@@ -32,11 +29,8 @@ namespace POMExcersise.Tests
 		[Test]
 		public void TestAddToCartByName()
 		{
-			Login("standard_user", "secret_sauce");
 
-			var inventoryPage = new InventoryPage(driver);
 			inventoryPage.AddToCartByName("Sauce Labs Bike Light");
-			var cartPage = new CartPage(driver);
 			inventoryPage.ClickCartLink();
 
 			Assert.That(cartPage.IsCartItemDisplayed(), Is.True,
@@ -46,11 +40,8 @@ namespace POMExcersise.Tests
 		[Test]
 		public void TestPageTitle()
 		{
-			Login("standard_user", "secret_sauce");
-
-			var inventoryPage = new InventoryPage(driver);
-
-
+			//Login("standard_user", "secret_sauce");
+			Assert.That(inventoryPage.IsPageLoaded(), Is.True, "Inventory page is not loaded correctly");
 		}
 	}
 }

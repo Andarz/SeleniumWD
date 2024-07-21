@@ -1,9 +1,4 @@
 ﻿using POMExcersise.Pages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace POMExcersise.Tests
 {
@@ -14,7 +9,6 @@ namespace POMExcersise.Tests
 		{
 			Login("standard_user", "secret_sauce");
 
-			var inventoryPage = new InventoryPage(driver);
 
 			Assert.That(inventoryPage.IsPageLoaded(), Is.True, 
 				"Login failed and inventory page is not loaded");

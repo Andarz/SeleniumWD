@@ -40,8 +40,5 @@ namespace POMExcersise.Pages
         {
             return GetText(productsPageTitle) == "Products" && driver.Url.Contains("inventory.html");
         }
-
-
-
 	}
 }

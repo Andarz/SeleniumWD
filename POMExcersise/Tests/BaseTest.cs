@@ -8,6 +8,16 @@ namespace POMExcersise.Tests
 	{
 		protected IWebDriver driver;
 
+		protected InventoryPage inventoryPage;
+
+		protected CartPage cartPage;
+
+		protected CheckoutPage checkoutPage;
+
+		protected HiddenMenuPage hiddenMenuPage;
+
+		protected By loginButton;
+
 		[SetUp]
 		public void SetUp()
 		{
@@ -17,6 +27,12 @@ namespace POMExcersise.Tests
 			driver = new ChromeDriver(chromeOptions);
 			driver.Manage().Window.Maximize();
 			driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+
+			inventoryPage = new InventoryPage(driver);
+			cartPage = new CartPage(driver);
+			checkoutPage = new CheckoutPage(driver);
+			hiddenMenuPage = new HiddenMenuPage(driver);
+			loginButton = By.Id("login-button");
 		}
 
 		[TearDown]
